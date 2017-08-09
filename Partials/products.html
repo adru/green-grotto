@@ -11,9 +11,7 @@
   <div class="icon" rel="search"></div>
 </div>
 <div class="select_wrapper regions" ng-if="regions && regions.length">
-  <select name="region" class="selectedRegion notice" dir="rtl" ng-model="selectedRegion" ng-change="changeRegion(selectedRegion); changeTop10Region();">
-    <option ng-repeat="regi in regions track by regi.id" value="{{::regi.id}}" ng-selected="selectedRegion == regi.id">{{regi.region_name | getTranslation:selectedLanguage}}</option>
-  </select>
+  <select name="region" class="selectedRegion notice" dir="rtl" ng-options="regi as (regi.region_name | getTranslation:selectedLanguage) for regi in regions track by regi.id" ng-model="selected.region" ng-change="changeRegion(selected.region.id); changeTop10Region();"></select>
 </div>
 <ul id="categories" ng-if="clientInfo && clientInfo.product_mode != 'product' && categories.length && !query">
   <li ng-repeat="category in categories" class="wo_pic">
