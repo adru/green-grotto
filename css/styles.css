@@ -474,13 +474,15 @@ nav#header {
     top: 0;
     content: " "; }
   nav#header #cart .txt {
-    line-height: 16px;
+    line-height: 20px;
     display: block; }
   nav#header #cart .num {
     font-size: 9px;
     line-height: 9px;
     text-transform: uppercase;
     display: block; }
+    nav#header #cart .num span {
+      vertical-align: top; }
   nav#header #cart.added {
     -webkit-animation: blink 0.5s infinite ease-in-out;
     animation: blink 0.5s infinite ease-in-out; }
@@ -2593,6 +2595,7 @@ article.history .inner .header {
 .plans .activePlan .add_variable_item {
   font-weight: 300; }
 
+.update,
 .offline {
   position: absolute;
   display: block;
@@ -2607,10 +2610,12 @@ article.history .inner .header {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   pointer-events: all; }
+  .update.shield#shield,
   .offline.shield#shield {
     z-index: 99999;
     opacity: 1;
     pointer-events: all; }
+  .update article,
   .offline article {
     text-align: center; }
 
@@ -3395,6 +3400,24 @@ section#forms {
   #console.forgot li#forgot .noicon {
     padding-right: 40px; }
 
+.update .close,
+.update .update_btn {
+  padding: 12px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  background: #000;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 0; }
+.update .update_btn {
+  margin-top: 65px; }
+
 nav#menu ul#console.facebook li.facebook {
   text-align: center;
   background-color: transparent; }
@@ -3958,8 +3981,12 @@ section#forms.passport #console ul li {
   color: #FFFFFF;
   background: #323031; }
 
+.update,
 .offline {
   color: #FFFFFF; }
+
+.update .update_btn {
+  background: #009944; }
 
 /***
   * CUSTOM STYLING

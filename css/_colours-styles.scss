@@ -333,7 +333,7 @@ article.rating {
       box-shadow: 0 0 10px 0 $rewardLineShadow;
     }
     .icon {
-      &[rel="rewards"] {        
+      &[rel="rewards"] {
         .claim_btn {
           color: $rewardClaimBtn;
           background-color: rgba($rewardClaimBtnBKG,0.75);
@@ -395,7 +395,7 @@ article.rating {
     background-color: $main;
     .inner {
       color: $white;
-    }  
+    }
   }
   .location_wrapper {
     .closest {
@@ -710,7 +710,7 @@ section#forms {
       }
     }
   }
-  &.passport {    
+  &.passport {
     #console ul {
       li {
         background-color: $passportBKG;
@@ -819,6 +819,13 @@ section#forms {
   }
 }
 
+.update,
 .offline {
   color: $offline;
+}
+
+.update {
+  .update_btn {
+    background: $main;
+  }
 }

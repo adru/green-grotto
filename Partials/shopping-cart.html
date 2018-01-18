@@ -22,7 +22,7 @@
                 <div class="header">
                   <h4>{{text.yourCart}}</h4>
                 </div>
-                <div class="item" ng-repeat="item in cartProducts" ng-if="cart.products && cart.products.length" ng-click="editProduct($index);" ng-include="(item.type == 'reward') ? 'cart_reward.html' : 'cart_item.html'"></div>
+                <div class="item" ng-repeat="item in cartProducts track by $index" ng-if="cart.products && cart.products.length" ng-click="editProduct($index);" ng-include="(item.type == 'reward') ? 'cart_reward.html' : 'cart_item.html'"></div>
                 <a class="rewards short bar" ng-if="showRewards" href="#/rewards/" ng-click="closeMenu($event)">
                   {{text.addRewards}}
                 </a>

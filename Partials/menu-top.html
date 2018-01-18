@@ -7,14 +7,10 @@
         <div class="userPanel" ng-if="userDetails">
           <div class="icon" rel="user" ng-style="profilePic(userDetails)" ng-class="(userDetails.image && userDetails.image != '') ? 'w_pic' : 'wo_pic'"></div>
           <div class="right">
-            <div class="points" ng-if="clientInfo && !clientInfo.points_as_dollars_flag">
+            <div class="points">
               <span class="number">{{userDetails.current_points}}</span>
               <span ng-if="userDetails.current_points == 1">{{text.point}}</span>
               <span ng-if="userDetails.current_points != 1">{{text.points}}</span>
-            </div>
-            <div class="points" ng-if="clientInfo && clientInfo.points_as_dollars_flag">
-              $
-              <span class="number">{{userDetails.current_points}}</span>
             </div>
             <nav id="user-menu">
               <a href="#/favourites/" ng-class="currentParent == 'favourites' ? 'selected' : ''" class="icon" rel="heart" ng-click="closeMenu($event)"></a>

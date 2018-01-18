@@ -131,7 +131,7 @@ nav#header {
   }
   #cart {
     .txt {
-      line-height: 16px;
+      line-height: 20px;
       display: block;
     }
     .num {
@@ -139,6 +139,9 @@ nav#header {
       line-height: 9px;
       text-transform: uppercase;
       display: block;
+      span {
+        vertical-align: top;
+      }
     }
     &.added {
       -webkit-animation: blink 0.5s infinite ease-in-out;
