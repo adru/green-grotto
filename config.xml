@@ -3,12 +3,12 @@
   xmlns:gap="http://phonegap.com/ns/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
   id="guru.trueblue.greengrotto"
-  android-versionCode="1248"
-  versionCode="124"
-  version="1.2.4">
+  android-versionCode="1258"
+  versionCode="125"
+  version="1.2.5">
 
   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>1.2.4</string>
+    <string>1.2.5</string>
   </gap:config-file>
 
   <name>Green Grotto</name>
