@@ -93,12 +93,6 @@
   <gap:splash src="res/screen/splash_480800.jpg" gap:platform="winphone"/>
   <gap:splash src="splash.png"/>
 
-
-	<preference name="android-build-tool" value="gradle" />
-  <preference name="android-minSdkVersion" value="15" />
-  <preference name="android-targetSdkVersion" value="26" />
-	<preference name="android-installLocation" value="auto" />
-
   <plugin name="phonegap-plugin-barcodescanner" />
   <plugin name="cordova-plugin-inappbrowser" />
   <plugin name="cordova-plugin-appversion" source="npm" />
@@ -119,6 +113,11 @@
   <plugin name="phonegap-plugin-push" />
 
   <platform name="android">
+  	<preference name="android-build-tool" value="gradle" />
+    <preference name="android-minSdkVersion" value="15" />
+    <preference name="android-targetSdkVersion" value="26" />
+  	<preference name="android-installLocation" value="auto" />
+
     <preference name="phonegap-version" value="cli-7.1.0" />
 		<plugin name="cordova-android-support-gradle-release" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
@@ -136,7 +135,7 @@
       <uses-feature android:name="android.hardware.location.gps" />
     </config-file>
 
-    <plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.1">
+    <plugin name="cordova-plugin-facebook4" source="npm">
       <param name="APP_ID" value="1523899957830230" />
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
