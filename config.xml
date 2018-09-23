@@ -93,6 +93,7 @@
   <gap:splash src="res/screen/splash_480800.jpg" gap:platform="winphone"/>
   <gap:splash src="splash.png"/>
 
+
   <plugin name="phonegap-plugin-barcodescanner" />
   <plugin name="cordova-plugin-inappbrowser" />
   <plugin name="cordova-plugin-appversion" source="npm" />
@@ -110,14 +111,14 @@
   <plugin name="cordova.plugins.diagnostic" source="npm" spec="4.0.8" />
   <plugin name="cordova-plugin-appavailability" source="npm" spec="0.4.2" />
 
-  <preference name="phonegap-version" value="cli-7.1.0" />
   <plugin name="phonegap-plugin-push" />
 
   <platform name="android">
-  	<preference name="android-build-tool" value="gradle" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="android-build-tool" value="gradle" />
     <preference name="android-minSdkVersion" value="15" />
     <preference name="android-targetSdkVersion" value="26" />
-  	<preference name="android-installLocation" value="auto" />
+    <preference name="android-installLocation" value="auto" />
 
 		<plugin name="cordova-android-support-gradle-release" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
@@ -140,10 +141,11 @@
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
 
-    <resource-file src="google-services.json" target="app/google-services.json" />
+    <resource-file src="google-services.json" target="google-services.json" />
   </platform>
 
   <platform name="ios">
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="3.0.0" />
 		<plugin name="cordova-plugin-legacy-whitelist" source="npm" />
 
