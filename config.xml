@@ -139,15 +139,9 @@
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
 
-    <!-- <plugin name="cordova-support-google-services" source="npm" /> -->
-    <!-- <resource-file src="google-services.json" target="src/google-services.json" /> -->
-    <plugin name="cordova-plugin-fcm" source="npm" />
-    <plugin name="phonegap-plugin-push" spec="1.8.3">
+    <plugin name="phonegap-plugin-push" spec="1.11.1">
       <param name="SENDER_ID" value="12630486576" />
     </plugin>
-    <!-- <plugin name="phonegap-plugin-push" spec="~2.1.2">
-      <variable name="FCM_VERSION" value="11.0.1" />
-    </plugin> -->
   </platform>
 
   <platform name="ios">
