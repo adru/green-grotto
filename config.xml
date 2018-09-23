@@ -139,9 +139,8 @@
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
 
-    <plugin name="phonegap-plugin-push" spec="1.11.1">
-      <param name="SENDER_ID" value="12630486576" />
-    </plugin>
+    <plugin name="phonegap-plugin-push" spec="~2.2.3" />
+    <resource-file src="google-services.json" target="app/google-services.json" />
   </platform>
 
   <platform name="ios">
