@@ -111,7 +111,7 @@
   <plugin name="cordova.plugins.diagnostic" source="npm" spec="4.0.8" />
   <plugin name="cordova-plugin-appavailability" source="npm" spec="0.4.2" />
 
-  <plugin spec="https://github.com/phonegap/phonegap-plugin-push.git#v2.1.2" source="git" />
+  <plugin spec="https://github.com/phonegap/phonegap-plugin-push.git#v2.0.0" source="git" />
 
   <platform name="android">
     <preference name="phonegap-version" value="cli-7.1.0" />
