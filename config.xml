@@ -119,6 +119,7 @@
     <preference name="android-installLocation" value="auto" />
 
 		<plugin name="cordova-android-support-gradle-release" source="npm" />
+		<plugin name="cordova-android-play-services-gradle-release" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name="cordova-plugin-splashscreen" source="npm" />
     <config-file target="AndroidManifest.xml" parent="/*">
