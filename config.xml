@@ -110,6 +110,7 @@
   <plugin name="cordova.plugins.diagnostic" source="npm" spec="4.0.8" />
   <plugin name="cordova-plugin-appavailability" source="npm" spec="0.4.2" />
 
+  <preference name="phonegap-version" value="cli-7.1.0" />
   <plugin name="phonegap-plugin-push" />
 
   <platform name="android">
@@ -118,7 +119,6 @@
     <preference name="android-targetSdkVersion" value="26" />
   	<preference name="android-installLocation" value="auto" />
 
-    <preference name="phonegap-version" value="cli-7.1.0" />
 		<plugin name="cordova-android-support-gradle-release" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name="cordova-plugin-splashscreen" source="npm" />
@@ -135,7 +135,7 @@
       <uses-feature android:name="android.hardware.location.gps" />
     </config-file>
 
-    <plugin name="cordova-plugin-facebook4" source="npm">
+    <plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.1">
       <param name="APP_ID" value="1523899957830230" />
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
@@ -144,7 +144,6 @@
   </platform>
 
   <platform name="ios">
-    <preference name="phonegap-version" value="cli-6.5.0" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="3.0.0" />
 		<plugin name="cordova-plugin-legacy-whitelist" source="npm" />
 
