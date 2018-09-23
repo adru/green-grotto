@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12630486576",
+    "firebase_url": "https://green-grotto-84d13.firebaseio.com",
+    "project_id": "green-grotto-84d13",
+    "storage_bucket": "green-grotto-84d13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12630486576:android:b531424a9b87328f",
+        "android_client_info": {
+          "package_name": "guru.trueblue.grotto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12630486576-cndjbghe0bqgjsalue7k7f5hrshhgk3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYYEnxsSVth6-lbIJqfegyn35XHzQ6bDs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
