@@ -140,7 +140,8 @@
       <param name="APP_ID" value="1523899957830230" />
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
-
+    
+    <preference name='pgb-builder-version' value='2' />
     <resource-file src="google-services.json" target="google-services.json" />
   </platform>
 
