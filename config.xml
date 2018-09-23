@@ -114,7 +114,7 @@
   <plugin name="phonegap-plugin-push" source="npm" spec="2.0.0" />
 
   <platform name="android">
-    <preference name="phonegap-version" value="cli-7.0.1" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
     <preference name="pgb-builder-version" value="2" />
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-minSdkVersion" value="15" />
@@ -142,7 +142,8 @@
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
 
-    <resource-file src="google-services.json" target="/app/google-services.json" />
+    <plugin name="cordova-support-google-services" source="npm" />
+    <resource-file src="google-services.json" target="google-services.json" />
   </platform>
 
   <platform name="ios">
