@@ -111,8 +111,6 @@
   <plugin name="cordova.plugins.diagnostic" source="npm" spec="4.0.8" />
   <plugin name="cordova-plugin-appavailability" source="npm" spec="0.4.2" />
 
-  <plugin name="phonegap-plugin-push" source="npm" spec="2.0.0" />
-
   <platform name="android">
     <preference name="phonegap-version" value="cli-7.1.0" />
     <preference name="android-build-tool" value="gradle" />
@@ -141,8 +139,9 @@
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
 
-    <plugin name="cordova-support-google-services" source="npm" />
-    <resource-file src="google-services.json" target="google-services.json" />
+    <plugin name="phonegap-plugin-push" spec="1.11.1">
+      <param name="SENDER_ID" value="12630486576" />
+    </plugin>
   </platform>
 
   <platform name="ios">
@@ -154,6 +153,8 @@
       <param name="APP_ID" value="1523899957830230" />
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
+
+    <plugin name="phonegap-plugin-push" spec="1.11.1" />
   </platform>
 
   <plugin name="cordova-plugin-customurlscheme" source="npm">
