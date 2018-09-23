@@ -114,7 +114,8 @@
   <plugin spec="https://github.com/phonegap/phonegap-plugin-push.git#v2.0.0" source="git" />
 
   <platform name="android">
-    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
+    <preference name="pgb-builder-version" value="2" />
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-minSdkVersion" value="15" />
     <preference name="android-targetSdkVersion" value="26" />
@@ -140,8 +141,7 @@
       <param name="APP_ID" value="1523899957830230" />
       <param name="APP_NAME" value="TrueBlue Loyalty Apps" />
     </plugin>
-    
-    <preference name='pgb-builder-version' value='2' />
+
     <resource-file src="google-services.json" target="google-services.json" />
   </platform>
 
