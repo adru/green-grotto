@@ -9,7 +9,7 @@
 /***
   * FONTS
   ***/
-  
+
 $mainFont: Arial, Helvetica, sans-serif;
 $headerFont: $mainFont;
 
@@ -100,6 +100,59 @@ $innerLiBKG: rgba($black, 0.25);
 /***
   * CUSTOM STYLING
   ***/
+.icon[rel="gift"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 12.5vmin;
+  width: 12.5vmin;
+  font-size: 12.5/2vmin;
+  line-height: 12.5vmin;
+  text-align: center;
+}
+.icon[rel="concierge"]:before,
+.icon[rel="calendar"]:before,
+.icon[rel="gift"]:before {
+  z-index: 1;
+  position: relative;
+  font-family: "Font Awesome 5 Pro" !important;
+  z-index: 99;
+  font-size: 16px;
+  content: "\f06b";
+  top: -2px;
+}
+.icon[rel="concierge"]:before {
+  content: "\f562";
+  font-size: 14px !important;
+  font-weight: bold;
+}
+.icon[rel="calendar"]:before {
+  content: "\f073";
+  font-size: 14px !important;
+}
+
+.icon[rel="shop"]:before,
+.icon[rel="food"]:before {
+  font-family: "trueblue" !important;
+  font-size: 14px !important;
+}
+.icon[rel="products"]:before {
+  position: relative;
+  z-index: 99;
+  font-size: 16px;
+}
+.icon[rel="gift"]:after,
+.icon[rel="products"]:after {
+  font-family: "greengrotto";
+  color: #009944;
+  content: "\6a";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
 
 .content { // no-repeat, cover, center center, fixed
   background-image: url('../background.jpg');
@@ -344,4 +397,3 @@ div.rating {
   &[rating="4.5"] {
     > .icon:nth-child(5):before { content: "\6d"; } }
 }
-
